@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Dodaj pieska</title>
+</head>
+<body>
+
+
+<form action="/dodaj" method="post" th:object="${Dog}">
+    Nazwa:<input type="text", th:field="*{name}"/><br>
+    <input type="submit" name="Dojaj">
+
+
+
+
+
+</form>
+
+</body>
+</html>

@@ -10,7 +10,7 @@
 
 <ul>
     <li th:each="dog: ${dogs}">
-        <a th:href="${dog.name}" th:text="${dog.name}"></a>
+        <a th:href="'/dog?id='+${dog.name}" th:text="${dog.name}"></a>
     </li>
 </ul>
 
